@@ -1,13 +1,26 @@
-// Update this page (the content is just a fallback if you fail to update the page)
 
-const Index = () => {
+import React from 'react';
+import Layout from '../components/Layout';
+import Hero from '../components/Hero';
+import Projects from '../components/Projects';
+import Skills from '../components/Skills';
+import Contact from '../components/Contact';
+
+const Index: React.FC = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
+    <Layout>
+      <div className="relative">
+        <Hero />
+        <Projects />
+        <Skills />
+        <Contact />
+        <footer className="py-8 text-center text-gray-400 bg-cosmic-dark/50">
+          <div className="max-w-6xl mx-auto px-4">
+            <p>© {new Date().getFullYear()} MERN Developer Portfolio. All rights reserved.</p>
+          </div>
+        </footer>
       </div>
-    </div>
+    </Layout>
   );
 };
 
