@@ -8,6 +8,11 @@ import {
   SiVercel, SiPostman,  SiLinux, SiPnpm
 } from 'react-icons/si';
 
+import { 
+  SiRedux, SiFirebase,  SiWordpress
+} from 'react-icons/si';
+
+// existing techStack array...
 const techStack = [
   { label: 'HTML', icon: <SiHtml5 className="text-[#e34f26]" /> },
   { label: 'CSS', icon: <SiCss3 className="text-[#264de4]" /> },
@@ -15,6 +20,7 @@ const techStack = [
   { label: 'TypeScript', icon: <SiTypescript className="text-[#3178c6]" /> },
   { label: 'ReactJS', icon: <SiReact className="text-[#61dafb]" /> },
   { label: 'NextJS', icon: <SiNextdotjs className="text-white" /> },
+  { label: 'Redux', icon: <SiRedux className="text-[#764abc]" /> },
   { label: 'Tailwind CSS', icon: <SiTailwindcss className="text-[#38bdf8]" /> },
   { label: 'Framer Motion', icon: <SiFramer className="text-[#0055ff]" /> },
   { label: 'Shadcn', icon: <SiShadcnui className="text-white" /> },
@@ -24,20 +30,22 @@ const techStack = [
   { label: 'MySQL', icon: <SiMysql className="text-[#00758f]" /> },
   { label: 'PostgreSQL', icon: <SiPostgresql className="text-[#336791]" /> },
   { label: 'Prisma', icon: <SiPrisma className="text-white" /> },
-
   { label: 'Zod', icon: <SiZod className="text-white" /> },
   { label: 'Git', icon: <SiGit className="text-[#f1502f]" /> },
   { label: 'GitHub', icon: <SiGithub className="text-white" /> },
+  { label: 'Firebase', icon: <SiFirebase className="text-[#FFCA28]" /> },
   { label: 'Vercel', icon: <SiVercel className="text-white" /> },
   { label: 'Postman', icon: <SiPostman className="text-[#ff6c37]" /> },
-
   { label: 'Linux', icon: <SiLinux className="text-[#fbc02d]" /> },
   { label: 'pnpm', icon: <SiPnpm className="text-[#f69220]" /> },
+ 
+
 ];
+
 
 const Skills = () => {
   return (
-    <section className="min-h-screen bg-black text-white flex flex-col items-center justify-center px-4 py-20 relative overflow-hidden">
+    <section id="skills" className="min-h-screen text-white flex flex-col items-center justify-center px-4 py-20 relative overflow-hidden">
       {/* Image behind the text */}
       <div className="relative w-full flex justify-center mb-40 z-0 mt-[20]">
         <img

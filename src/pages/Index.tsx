@@ -7,6 +7,9 @@ import Projects from '../components/Projects';
 import Skills from '../components/Skills';
 import Contact from '../components/Contact';
 import Navbar from '@/components/Navbar';
+import ExtraSection from '@/components/ExtraSection';
+import GitHubProfileSection from '@/components/GitHubProfileSection';
+import About from '@/components/About';
 
 const Index: React.FC = () => {
   return (
@@ -17,6 +20,9 @@ const Index: React.FC = () => {
         <Experience />
         <Projects />
         <Skills />
+        <About/>
+        <ExtraSection/>
+        <GitHubProfileSection/>
         <Contact />
         <footer className="py-8 text-center text-gray-400 bg-cosmic-dark/50">
           <div className="max-w-6xl mx-auto px-4">
